@@ -1,0 +1,101 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: #ffff;
+}
+
+body::before{
+    content: "";
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-de-personagens .lista-de-personagem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.selecao-de-personagens .personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-de-personagens .personagens .titulo{
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4f4f4f;
+    width: 100%;
+    text-align: center;
+
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    
+}
+.lista-de-personagem .personagem{
+    width: 123px;
+    
+    /*height: 190px;*/
+}
+
+.lista-de-personagem .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #4f4f4f;
+}
+
+.personagem-selecionado{
+    text-align: center;
+    max-width: 530px;
+}
+
+.personagem-selecionado .personagem-grande{
+    width: 430px;
+    height: 430px;
+}
+
+.personagem-selecionado .nome-personagem{
+    border-bottom: 2px solid #4f4f4f;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.personagem-grande{
+    box-shadow: 10px 10px 10px 5px black;
+    border-radius: 50%;
+}
